@@ -4,6 +4,7 @@
         <v-header></v-header>
         <v-blog title="I am title"></v-blog>
         <v-blog v-bind:title="post.title"></v-blog>
+        <v-demo></v-demo>
     </div>
 </template>
 
@@ -11,6 +12,7 @@
 
     import header from './components/header';
     import blog from './components/blog-test';
+    import exDemo from "./components/exDemo";
 
     export default {
         data() {
@@ -33,7 +35,8 @@
         name: 'App',
         components: {
             'v-header':header,
-            'v-blog':blog
+            'v-blog':blog,
+            'v-demo':exDemo
         }
         
     }
