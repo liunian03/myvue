@@ -2,17 +2,23 @@
     <div id="app">
         <!--<img src="./assets/logo.png">-->
         <v-header></v-header>
+        <v-blog title="I am title"></v-blog>
+        <v-blog v-bind:title="post.title"></v-blog>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
 
     import header from './components/header';
+    import blog from './components/blog-test';
 
     export default {
         data() {
             return {
-            
+                count:0,
+                post:{
+                    title:'我是标题'
+                }
             }
         },
         // created(){//钩子
@@ -26,7 +32,8 @@
         // },
         name: 'App',
         components: {
-            'v-header':header
+            'v-header':header,
+            'v-blog':blog
         }
         
     }

@@ -9,10 +9,12 @@ Vue.use(VueRouter);
 //实例化VueRouter对象
 export default new VueRouter({
     routes: [
-
+        {
+            path:'/'
+        }
     ],
-
 })
+
 
 
 
